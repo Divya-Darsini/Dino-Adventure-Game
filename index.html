@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Adventure Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>🦖 Dino Adventure</h1>
+
+    <!-- Instructions -->
+    <div id="instructions">
+      <h2>Welcome to Dino Adventure!</h2>
+      <p>🚀 Help the Dino jump over cactus 🌵 and avoid birds 🐦.</p>
+      <p>🎮 Controls: Press <b>SPACE</b> to Jump</p>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <!-- Game Area -->
+    <div id="game-container" class="hidden">
+      <div id="cloud"></div>
+      <div id="ground"></div>
+      <img id="dino" 
+     src="images/Dino.png" 
+     alt="Dino">
+
+      <!-- Obstacles are added dynamically in JS -->
+    </div>
+
+    <h2 id="score-board" class="hidden">Score: <span id="score">0</span></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
